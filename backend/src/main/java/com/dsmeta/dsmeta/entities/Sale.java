@@ -19,7 +19,7 @@ public class Sale {
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
-	private LocalDate date; // PEGA A DATA LOCAL (NÃO TEM O HORÁRIO E NÃO TEM FUSO HORÁRIO)
+	private LocalDate date; // PEGA A DATA LOCAL (NÃO TEM O HORÁRIO E NÃO TEM FUSO HORÁRIO).
 	
 	public Sale() {
 	}
