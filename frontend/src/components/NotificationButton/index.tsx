@@ -1,10 +1,24 @@
+import axios from 'axios';
 import icon from '../../assets/img/notification-icon.svg';
+import { BASE_URL } from '../../utils/request';
 
 import './styles.css';
 
-function NotificationButton() {
+type Props = {
+  saleId: number;
+}
+
+//ESSA FUNÇÃO FAZ A CHAMADA DA API QUE MANDA O SMS
+function handleClick(id : number) {
+  axios(`${BASE_URL}/sales/${id}/notification`) //FAZ A REQUISIÇÃO COM O ID QUE FOI CLICADO NO handleClick
+    .then(response => {
+      console.log("SUCESSO");
+    })
+}
+
+function NotificationButton( {saleId} : Props) {
   return (
-    <div className="dsmeta-red-btn">
+    <div className="dsmeta-red-btn" onClick={() => handleClick(saleId)}>
       <img src={icon} alt="Notificar" />
     </div>
   );
