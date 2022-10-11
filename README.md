@@ -1,4 +1,4 @@
-# DS Vendas
+# DS Meta
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/MatheusManzutti/sds-dsmeta/blob/main/LICENCE)
 
 # Sobre o projeto
